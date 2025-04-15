@@ -1,30 +1,24 @@
-import { useState } from 'react'
-import './App.css'
-import NavBar from "./components/navbar"
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import HomePage from "./pages/home"
-import AboutPage from "./pages/about"
-import ContactPage from "./pages/contact"
-import Footer from "./components/footer"
+import './App.css';
+import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Services from "./components/Services";
+import FAQ from "./components/FAQ";
+import Bio from "./components/Bio";
+import Hero from "./components/Hero";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <Router>
-      <div className="flex flex-col min-h-screen">
-
-        <NavBar/>
-
-        <div className="flex-grow">
-          <Routes>
-            <Route path = "/" element={<HomePage />} /> 
-            <Route path = "/about" element={<AboutPage />} />
-            <Route path = "/contact" element={<ContactPage />} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
-    </Router>
-  )
+    <div className="bg-amber-50 font-sans">
+      <NavBar />
+      <section id="hero" className="scroll-mt-16"><Hero /></section>
+      <section id="bio" className="scroll-mt-16"><Bio /></section>
+      <section id="services" className="scroll-mt-16"><Services /></section>
+      <section id="contact" className="scroll-mt-16"><Contact /></section>
+      <section id="FAQ" className="scroll-mt-16"><FAQ /></section>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
