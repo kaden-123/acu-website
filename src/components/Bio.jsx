@@ -5,7 +5,7 @@ function Bio() {
             <div className="text-center mb-16">
                 <h2 className="text-3xl font-bold text-gray-800 mb-4">Ancient Healing, Modern Approach</h2>
                 <div className="w-20 h-1 bg-amber-500 mx-auto mb-6"></div>
-                <p className="text-gray-600 max-w-3xl mx-auto">At Harmony Acupuncture, we blend centuries-old techniques with contemporary understanding to provide personalized care for your health and wellness.</p>
+                <p className="text-gray-600 max-w-3xl mx-auto">At Acu Health Clinic, we blend centuries-old techniques with contemporary understanding to provide personalized care for your health and wellness.</p>
             </div>
             
             <div className="flex flex-col md:flex-row items-center">
@@ -18,15 +18,19 @@ function Bio() {
                     </div>
                 </div>
                 <div className="md:w-1/2">
-                    <h3 className="text-2xl font-semibold text-gray-800 mb-4">Our Philosophy</h3>
-                    <p className="text-gray-600 mb-4">Traditional Chinese Medicine views health as a state of balance between complementary energies. When these energies fall out of balance, illness and discomfort can occur.</p>
-                    <p className="text-gray-600 mb-6">Acupuncture works by stimulating specific points along the body's meridians to restore this natural equilibrium, promoting the body's innate healing abilities.</p>
-                    
+                    <h3 className="text-2xl font-semibold text-gray-800 mb-4">About Our Practitioner</h3>
+                    <p className="text-gray-600 mb-4">Tieyan Shang is a board certified and licensed acupuncturist in WA. 
+                                                        She got her medical and acupuncture degree from Beijing 
+                                                        Medical University. As an experienced acupuncturist, she 
+                                                        treated more than different 2000 patient over  19+ years. She specializes in a variety of conditions like
+                                                        pain, sport injury and spine condition, depression, 
+                                                        and anxiety. Through careful assessment, she has helped many patients improve their
+                                                        quality of life and achieve their health goals.</p>
                     <div className="flex items-center mb-4">
                         <div className="bg-emerald-100 p-2 rounded-full mr-4">
                             <i className="fas fa-check-circle text-emerald-600"></i>
                         </div>
-                        <p className="text-gray-700">Over 15 years of clinical experience</p>
+                        <p className="text-gray-700">Over 19 years of clinical experience</p>
                     </div>
                     <div className="flex items-center mb-4">
                         <div className="bg-emerald-100 p-2 rounded-full mr-4">

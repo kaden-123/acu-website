@@ -6,7 +6,7 @@ function Footer() {
             <div className="mb-8 md:mb-0">
               <div className="flex items-center mb-4">
                 <i className="fas fa-leaf text-amber-400 text-2xl mr-2"></i>
-                <span className="text-xl font-semibold">Harmony Acupuncture</span>
+                <span className="text-xl font-semibold">Acu Health Clinic</span>
               </div>
               <p className="max-w-xs opacity-80">Restoring balance and promoting natural healing through traditional Chinese
                 acupuncture.</p>
@@ -55,7 +55,7 @@ function Footer() {
           </div>
 
           <div className="border-t border-emerald-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="opacity-80 mb-4 md:mb-0">© 2023 Harmony Acupuncture Clinic. All rights reserved.</p>
+            <p className="opacity-80 mb-4 md:mb-0">© 2025 Acu Health Clinic. All rights reserved.</p>
           </div>
         </div>
       </footer>

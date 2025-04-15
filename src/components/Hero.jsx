@@ -4,11 +4,11 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-emerald-900 to-transparent opacity-75"></div>
         <div className="container mx-auto px-6 py-24 md:py-32 relative z-10">
           <div className="max-w-2xl fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Restore Your Natural Balance</h1>
-            <p className="text-xl text-white mb-8">Experience the healing power of traditional Chinese acupuncture in our serene clinic.</p>
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Your Journey to wellness begins here.</h1>
+            <p className="text-xl text-white mb-8"></p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <a href="#services" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-lg transition transform hover:scale-105 text-center">
-                Our Services
+               
               </a>
             </div>
           </div>

@@ -13,54 +13,10 @@ function Contact() {
         </div>
 
         <div className="flex flex-col md:flex-row gap-8 mb-8">
-          {/* Contact Form (Left Column) */}
+          {/* Map (Left Column - Replacing Contact Form) */}
           <div className="md:w-1/2">
-            <div className="bg-white p-8 rounded-lg shadow-md h-full">
-              <h3 className="text-xl font-semibold text-gray-800 mb-6">Send Us a Message</h3>
-              <form id="contactForm">
-                <div className="mb-4">
-                  <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
-                  <input 
-                    type="text" 
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" 
-                  />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    id="email"
-                    name="email"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" 
-                  />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="phone" className="block text-gray-700 mb-2">Phone</label>
-                  <input 
-                    type="tel" 
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500" 
-                  />
-                </div>
-                <div className="mb-4">
-                  <label htmlFor="message" className="block text-gray-700 mb-2">Your Message</label>
-                  <textarea 
-                    id="message" 
-                    name="message"
-                    rows="4"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  ></textarea>
-                </div>
-                <button 
-                  type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition"
-                >
-                  Send Message
-                </button>
-              </form>
+            <div className="rounded-lg overflow-hidden shadow-lg h-full">
+              <Map />
             </div>
           </div>
 
@@ -109,11 +65,6 @@ function Contact() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Map Section - Added below the form and clinic info */}
-        <div className="mt-8 rounded-lg overflow-hidden shadow-lg border border-gray-200">
-          <Map />
         </div>
       </div>
     </div>
