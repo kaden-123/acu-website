@@ -80,7 +80,7 @@ function NavBar() {
                 className="flex items-center bg-emerald-50 px-4 py-2 rounded-lg border border-emerald-100"
               >
                 <i className="fas fa-phone text-emerald-600 mr-2"></i>
-                <span className="font-medium">(503) 555-1234</span>
+                <span className="font-medium">(206) 316-5718</span>
               </a>
               
               <button
@@ -143,7 +143,7 @@ function NavBar() {
                 className="flex items-center w-full px-3 py-2 rounded-lg bg-emerald-50 text-emerald-600"
               >
                 <i className="fas fa-phone mr-2"></i>
-                <span>Call Now: (503) 555-1234</span>
+                <span>Call Now: (206) 316-5718</span>
               </a>
               <button
                 onClick={() => scrollToSection('contact')}

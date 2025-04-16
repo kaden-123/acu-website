@@ -32,7 +32,7 @@ function Contact() {
                 <div>
                   <h4 className="font-medium text-gray-800 mb-1">Location</h4>
                   <p className="text-gray-600">
-                    123 Wellness Way<br />Suite 200<br />Portland, OR 97201
+                    6405 218th St SW<br />Room 304<br />Mountlake Terrace, WA 98043
                   </p>
                 </div>
               </div>
@@ -58,8 +58,8 @@ function Contact() {
                 <div>
                   <h4 className="font-medium text-gray-800 mb-1">Contact</h4>
                   <p className="text-gray-600">
-                    Phone: (503) 555-1234<br />
-                    Email: info@harmonyacupuncture.com
+                    Phone: (206) 316-5718<br />
+                    Email: acupuncturelynnwood@gmail.com
                   </p>
                 </div>
               </div>
