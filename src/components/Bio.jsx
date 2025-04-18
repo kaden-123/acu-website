@@ -11,10 +11,7 @@ function Bio() {
             <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
                     <div className="relative">
-                        <img src="" alt="Acupuncture treatment" class="rounded-lg shadow-xl w-full"></img>
-                        <div className="absolute -bottom-5 -right-5 bg-amber-500 p-4 rounded-full shadow-lg">
-                            <i className="fas fa-acupuncture text-white text-3xl needle-pulse"></i>
-                        </div>
+                        <img src="./src/images/tieyan_shang.jpg" alt="Acupuncture treatment" class="rounded-lg shadow-xl w-full"></img>
                     </div>
                 </div>
                 <div className="md:w-1/2">

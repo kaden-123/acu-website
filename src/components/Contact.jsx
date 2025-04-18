@@ -44,9 +44,9 @@ function Contact() {
                 <div>
                   <h4 className="font-medium text-gray-800 mb-1">Hours</h4>
                   <p className="text-gray-600">
-                    Monday - Friday: 9am - 6pm<br />
-                    Saturday: 10am - 3pm<br />
-                    Sunday: Closed
+                    Tuesday - Friday: 9 A.M. - 7 P.M.<br />
+                    Saturday - Sunday: 10 A.M. - 5 P.M.<br />
+                    Monday: Closed
                   </p>
                 </div>
               </div>

@@ -68,17 +68,6 @@ function Footer() {
 
             <div className="border-t border-emerald-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
               <p className="opacity-80 mb-4 md:mb-0">© 2025 Acu Health Clinic. All rights reserved.</p>
-              <div className="flex space-x-4">
-                <a href="#" className="opacity-80 hover:opacity-100 hover:text-amber-300 transition">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" className="opacity-80 hover:opacity-100 hover:text-amber-300 transition">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a href="#" className="opacity-80 hover:opacity-100 hover:text-amber-300 transition">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </div>
             </div>
           </div>
         </footer>
