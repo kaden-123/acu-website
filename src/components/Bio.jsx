@@ -1,4 +1,4 @@
-import tieyanImage from './images/tieyan_shang.jpg';
+import tieyanImage from '../images/tieyan_shang.jpg';
 
 function Bio() {  
   return (
