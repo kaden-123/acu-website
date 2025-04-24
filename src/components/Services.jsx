@@ -1,13 +1,7 @@
 import { useState } from 'react';
-import { Helmet } from 'react-helmet';
 
 function Services() {
   const [activeTab, setActiveTab] = useState('techniques');
-
-  // SEO Metadata
-  const pageTitle = "Acupuncture Services & Treatment Techniques | Acu Health Clinic";
-  const pageDescription = "Specialized acupuncture for pain relief, stress reduction, and women's health. Expert care for auto accident injuries including whiplash.";
-  const keywords = "acupuncture, pain management, whiplash treatment, traditional chinese medicine";
 
   const servicesData = [
     {
@@ -94,16 +88,6 @@ function Services() {
 
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <meta name="keywords" content={keywords} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
-        <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Helmet>
-
       <div className="container mx-auto px-6 pb-10 pt-10">
         {/* Main Services/Techniques Section */}
         <div className="text-center mb-16">

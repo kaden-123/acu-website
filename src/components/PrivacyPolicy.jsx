@@ -2,9 +2,6 @@
 const PrivacyPolicy = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      {/* SEO Meta Tags */}
-        <title>Privacy Policy | Acu Health Clinic Acupuncture</title>
-        <meta name="description" content="Learn how we handle your data with our privacy policy." />
       
       <div className="prose prose-emerald max-w-none">
         <h1 className="text-3xl font-bold text-gray-900 mb-6">Privacy Policy</h1>

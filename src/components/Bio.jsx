@@ -1,24 +1,8 @@
-import { Helmet } from 'react-helmet';
 import tieyanImage from '../images/tieyan_shang.jpg';
 
 function Bio() {  
-  // SEO Metadata
-  const pageTitle = "About Dr. Tieyan Shang | Licensed Acupuncturist | Mountlake Terrace, WA";
-  const pageDescription = "Meet Dr. Tieyan Shang, board-certified acupuncturist with 19+ years experience treating pain, sports injuries, and mental health. Beijing Medical University trained.";
-  const keywords = "acupuncturist Mountlake Terrace, Dr. Tieyan Shang, licensed acupuncturist WA, Beijing Medical University, pain management acupuncture";
-
   return (
     <>
-      <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content={pageDescription} />
-        <meta name="keywords" content={keywords} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={pageDescription} />
-        <meta property="og:type" content="profile" />
-        <meta property="og:image" content={tieyanImage} />
-      </Helmet>
-
       <div className="py-16 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
