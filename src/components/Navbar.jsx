@@ -43,7 +43,7 @@ function NavBar() {
             onClick={() => scrollToSection('hero')}
           >
             <i className="fas fa-leaf text-emerald-600 text-2xl mr-2"></i>
-            <span className="text-xl font-semibold text-gray-800">Harmony Acupuncture</span>
+            <span className="text-xl font-semibold text-gray-800">Acu Health Clinic</span>
           </div>
           
           {/* Desktop Navigation */}
