@@ -140,11 +140,6 @@ function Services() {
                 <h2 className="text-xl font-semibold text-center text-gray-800 mb-3">{item.title}</h2>
                 <p className="text-gray-600 text-center">{item.description}</p>
               </div>
-              <div className="px-6 pb-6 text-center">
-                <button className={`${item.textColor} hover:opacity-80 font-medium transition-opacity`}>
-                  Learn more →
-                </button>
-              </div>
             </div>
           ))}
         </div>

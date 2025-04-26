@@ -1,4 +1,4 @@
-import tieyanImage from '../images/tieyan_shang.jpg';
+import tieyanImage from '../images/tieyan_shang.webp';
 
 function Bio() {  
   return (
@@ -14,11 +14,32 @@ function Bio() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
               <div className="relative">
-                <img 
-                  src={tieyanImage} 
-                  alt="Dr. Tieyan Shang, licensed acupuncturist in Mountlake Terrace" 
-                  className="rounded-lg shadow-xl w-full"
-                />
+                <picture>
+                  {/* AVIF (25% smaller than WebP) */}
+                  <source 
+                    srcSet="/src/images/tieyan_shang.avif" 
+                    type="image/avif" 
+                  />
+                  {/* WebP fallback */}
+                  <source 
+                    srcSet="/src/images/tieyan_shang.webp" 
+                    type="image/webp" 
+                  />
+                  {/* JPEG fallback */}
+                  <img
+                    src="/src/images/tieyan_shang.jpg"
+                    alt="Dr. Tieyan Shang"
+                    width={800}  
+                    height={800}
+                    className="rounded-lg shadow-xl w-full"
+                    loading="eager"
+                    decoding="sync"
+                    style={{
+                      contentVisibility: 'auto',
+                      containIntrinsicSize: '800px 800px'
+                    }}
+                  />
+                </picture>
               </div>
             </div>
             <div className="md:w-1/2">
@@ -26,7 +47,7 @@ function Bio() {
               <p className="text-gray-600 mb-4">
                 <strong>Dr. Tieyan Shang</strong> is a board certified and licensed acupuncturist in Washington State. 
                 She received her medical and acupuncture degree from Beijing Medical University. With over 19 years of clinical experience, 
-                she has successfully treated more than 2,000 patients annually for conditions including:
+                she has successfully treated more than 2,000 patients annually.
               </p>
               <div className="flex items-center mb-4">
                 <div className="bg-emerald-100 p-2 rounded-full mr-4">

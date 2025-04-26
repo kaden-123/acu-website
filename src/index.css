@@ -46,3 +46,10 @@
   transition: max-height 0.3s ease-out, padding-bottom 0.3s ease;
   overflow: hidden;
 }
+
+/* Prevent layout shifts */
+img.rounded-lg {
+  content-visibility: auto;
+  contain-intrinsic-size: 800px 800px;
+  background: #f3f4f6; /* Placeholder color */
+}
