@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { trackEvent } from '../analytics';
 
 function Services() {
   const [activeTab, setActiveTab] = useState('techniques');
@@ -103,26 +104,32 @@ function Services() {
           
           {/* Tab Buttons */}
           <div className="flex justify-center mt-8 space-x-4">
-            <button
-              onClick={() => setActiveTab('techniques')}
-              className={`px-6 py-2 rounded-lg transition-colors text-lg ${
-                activeTab === 'techniques' 
-                  ? 'bg-emerald-600 text-white shadow-md' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              Techniques
-            </button>
-            <button
-              onClick={() => setActiveTab('services')}
-              className={`px-6 py-2 rounded-lg transition-colors text-lg ${
-                activeTab === 'services' 
-                  ? 'bg-emerald-600 text-white shadow-md' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              Services
-            </button>
+          <button
+            onClick={() => {
+              setActiveTab('techniques');
+              trackEvent('Services', 'Tab Change', 'Techniques');
+            }}
+            className={`px-6 py-2 rounded-lg transition-colors text-lg ${
+              activeTab === 'techniques' 
+                ? 'bg-emerald-600 text-white shadow-md' 
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+          >
+            Techniques
+          </button>
+          <button
+            onClick={() => {
+              setActiveTab('services');
+              trackEvent('Services', 'Tab Change', 'Services');
+            }}
+            className={`px-6 py-2 rounded-lg transition-colors text-lg ${
+              activeTab === 'services' 
+                ? 'bg-emerald-600 text-white shadow-md' 
+                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+            }`}
+          >
+            Services
+          </button>
           </div>
         </div>
 

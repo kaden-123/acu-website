@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { trackEvent } from '../analytics';
 
 function FAQ() {
     // This useEffect will make the toggleFAQ function available globally
@@ -6,19 +7,21 @@ function FAQ() {
         window.toggleFAQ = function(num) {
             const content = document.getElementById(`faqContent${num}`);
             const icon = document.getElementById(`faqIcon${num}`);
+            const question = document.querySelector(`#faqContent${num} h3`)?.textContent;
             
             if (content.classList.contains('max-h-0')) {
-                content.classList.remove('max-h-0');
-                content.classList.add('max-h-96', 'pb-4', 'fade-in');
-                icon.classList.remove('fa-chevron-down');
-                icon.classList.add('fa-chevron-up');
+              content.classList.remove('max-h-0');
+              content.classList.add('max-h-96', 'pb-4', 'fade-in');
+              icon.classList.remove('fa-chevron-down');
+              icon.classList.add('fa-chevron-up');
+              trackEvent('FAQ', 'Question Expanded', question);
             } else {
-                content.classList.add('max-h-0');
-                content.classList.remove('max-h-96', 'pb-4', 'fade-in');
-                icon.classList.remove('fa-chevron-up');
-                icon.classList.add('fa-chevron-down');
+              content.classList.add('max-h-0');
+              content.classList.remove('max-h-96', 'pb-4', 'fade-in');
+              icon.classList.remove('fa-chevron-up');
+              icon.classList.add('fa-chevron-down');
             }
-        };
+          };
     }, []);
 
     return (

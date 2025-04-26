@@ -1,5 +1,6 @@
 import { GoogleMap, LoadScript, Marker, DirectionsRenderer } from '@react-google-maps/api';
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { trackEvent } from '../analytics';
 
 const MapWithDirections = ({ clinicAddress = "6405 218th St SW, Mountlake Terrace, WA 98043, USA" }) => {
   const [coordinates, setCoordinates] = useState(null);
@@ -38,6 +39,7 @@ const MapWithDirections = ({ clinicAddress = "6405 218th St SW, Mountlake Terrac
 
   // Get user's current location
   const getUserLocation = useCallback(() => {
+    trackEvent('Map', 'Get Directions Clicked', 'User Location');
     setError(null);
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { trackEvent } from '../analytics';
 
 function NavBar({ activeSection }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,6 +11,7 @@ function NavBar({ activeSection }) {
         behavior: 'smooth',
         block: 'start'
       });
+      trackEvent('Navigation', 'Section Click', sectionId);
     }
     setIsMobileMenuOpen(false);
   };
