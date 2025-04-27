@@ -1,5 +1,3 @@
-import tieyanImage from '../images/tieyan_shang.webp';
-
 function Bio() {  
   return (
     <>
@@ -15,19 +13,19 @@ function Bio() {
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-10">
               <div className="relative">
                 <picture>
-                  {/* AVIF (25% smaller than WebP) */}
+                  {/* AVIF */}
                   <source 
-                    srcSet="/src/images/tieyan_shang.avif" 
+                    srcSet="/images/tieyan_shang.avif" 
                     type="image/avif" 
                   />
                   {/* WebP fallback */}
                   <source 
-                    srcSet="/src/images/tieyan_shang.webp" 
+                    srcSet="/images/tieyan_shang.webp" 
                     type="image/webp" 
                   />
                   {/* JPEG fallback */}
                   <img
-                    src="/src/images/tieyan_shang.jpg"
+                    src="/images/tieyan_shang.jpg"
                     alt="Dr. Tieyan Shang"
                     width={800}  
                     height={800}
